@@ -1,0 +1,5 @@
+{
+  "/api/messages/public": "/api-messages-public",
+  "/api/messages/protected": "/api-messages-protected",
+  "/api/messages/admin": "/api-messages-admin"
+}

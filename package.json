@@ -15,8 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "api": "json-server --host 0.0.0.0 --port 6060 --watch json-server/db.json --routes json-server/routes.json"
+    "lint": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +45,6 @@
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.1.0",
-    "json-server": "^0.17.0",
     "prettier": "^2.7.1"
   }
 }

@@ -1,0 +1,133 @@
+.button {
+  border: 0;
+  border-radius: 0.8rem;
+
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--white);
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+
+  /* responsive */
+
+  min-width: 10rem;
+  padding: 1.6rem 1.6rem;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.button--compact {
+  /* responsive */
+
+  padding: 1rem 1.6rem;
+
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.button--primary {
+  background-color: var(--indigo);
+}
+
+.button--primary:hover {
+  background: rgba(99, 93, 255, 0.85);
+}
+
+.button--secondary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.button--secondary:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media only screen and (max-width: 480px) {
+  .button {
+    /* responsive */
+
+    min-width: 0.8rem;
+    padding: 1rem 1.2rem;
+
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+
+  .button--compact {
+    /* responsive */
+
+    padding: 0.6rem 1rem;
+
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+
+.button__login,
+.button__logout {
+  min-width: 8.4rem;
+
+  border: 0.1rem solid var(--indigo);
+  color: var(--white);
+  background: var(--indigo);
+  width: 50%;
+  font-size: 1.6rem;
+
+  margin-right: 1.6rem;
+
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.2rem;
+  padding: 0.8rem 0;
+  border-radius: 0.8rem;
+  text-align: center;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
+.button__sign-up {
+  min-width: 8.4rem;
+
+  border: 0.1rem solid var(--white);
+  color: var(--white);
+  background-color: transparent;
+  width: 50%;
+  font-size: 1.6rem;
+
+  margin-right: 1.6rem;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem;
+  padding: 0.8rem 0;
+  border-radius: 0.8rem;
+  text-align: center;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.button__login:last-child,
+.button__logout:last-child,
+.button__sign-up:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 641px) {
+  .button__login,
+  .button__logout,
+  .button__sign-up {
+    padding: 0.8rem 1.2rem;
+
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}

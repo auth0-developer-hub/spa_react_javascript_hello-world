@@ -45,6 +45,7 @@
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.1.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "vercel": "^28.12.8"
   }
 }

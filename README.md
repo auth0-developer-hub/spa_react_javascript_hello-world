@@ -1,12 +1,64 @@
-# React/JavaScript: Basic User Authentication Code Sample
+# React Authentication on Vercel
 
-This JavaScript code sample demonstrates **how to implement user authentication** in React applications using Auth0. This React code sample builds the Single-Page Application (SPA) using the React Router 6 library.
+This JavaScript template demonstrates **how to implement user authentication** in React applications using Auth0. This template uses the React Router 6 library.
 
-This code sample is part of the ["Auth0 Developer Hub"](https://auth0.com/developers/hub), a place where you can explore the authentication and authorization features of the Auth0 Identity Platform.
+This template is based on a code sample is part of the ["Auth0 Developer Center"](https://developer.auth0.com/resources/code-samples/spa/react), a place where you can explore the authentication and authorization features of the Auth0 Identity Platform.
 
-Visit the ["React/JavaScript + React Router 6 Code Sample: User Authentication For Basic Apps"](https://auth0.com/developers/hub/code-samples/spa/react-javascript/basic-authentication-with-react-router-6) page for instructions on how to configure and run this code sample and how to integrate it with an API server of your choice to [create a full-stack code sample](https://auth0.com//developers/hub/code-samples/full-stack/hello-world/basic-access-control/spa).
+## Quick Auth0 Set Up
 
-[![React/JavaScript + React Router 6 Code Sample: User Authentication For Basic Apps](https://cdn.auth0.com/blog/hub/code-samples/spa/react-javascript/basic-authentication-with-react-router-6.png)](https://auth0.com/developers/hub/code-samples/spa/react-javascript/basic-authentication-with-react-router-6)
+**First and foremost, if you haven't already, [sign up for an Auth0 account](https://auth0.com/signup?promo=sup&place=dev-hub-instruction&type=signup-cta&origin=developers-hub) to connect your application with the Auth0 Identity Platform.**
+
+Next, you'll connect your Single-Page Application (SPA) with Auth0. You'll need to create an application registration in the Auth0 Dashboard and get two configuration values: the **Auth0 Domain** and the **Auth0 Client ID**.
+
+### Get the Auth0 domain and client ID
+
+- Open the [Applications](https://manage.auth0.com/#/applications) section of the Auth0 Dashboard.
+
+- Click on the **Create Application** button and fill out the form with the following values:
+  - **Name**: `React Authentication on Vercel`
+  - **Application Type**: `Single Page Web Applications`
+- Click on the **Create** button.
+
+> Visit the ["Register Applications"](https://auth0.com/docs/applications/set-up-an-application) document for more details.
+
+An Auth0 Application page loads up.
+
+As such, click on the **"Settings"** tab of your Auth0 Application page, locate the **"Application URIs"** section, and fill in the following values:
+
+- **Allowed Callback URLs**: `https://*.vercel.app/callback`
+- **Allowed Logout URLs**: `https://*.vercel.app`
+- **Allowed Web Origins**: `https://*.vercel.app`
+
+🚨🚨🚨 **WARNING: Once you have deployed this template, please replace `https://*.vercel.app` with your Vercel deploy URL for better security.** 🚨🚨🚨
+
+Scroll down and click the **"Save Changes"** button.
+
+Next, locate the **"Basic Information"** section. You will need the **"Domain"** and **"Client ID"** values to deploy this template correctly.
+
+![Auth0 application settings to enable user authentication](https://cdn.auth0.com/blog/developer-hub/dashboard/auth0-spa-configuration.png)
+
+Once you click the "Deploy" button, the Vercel deploy workflow will show up. On the **"Configure Project"** section, ensure that you use the following values for the **"Required Environment Variables"**:
+
+- `REACT_APP_AUTH0_DOMAIN` is the value of the **"Domain"** field from the Auth0 settings.
+- `REACT_APP_AUTH0_CLIENT_ID` is the value of the **"Client ID"** field from the Auth0 settings.
+
+## After Deploy
+
+**Remember to replace `https://*.vercel.app` with your Vercel deploy URL in the Auth0 application settings.**
+
+### Use the React Sample Application
+
+Your Vercel deploy URL gives you access to the application.
+
+If you want to learn **how to implement user authentication in React step by step**, check out the ["React Authentication By Example" developer guide](https://developer.auth0.com/resources/guides/spa/react/basic-authentication).
+
+When you click on the **"Log In"** button, React takes you to the [Auth0 Universal Login page](https://auth0.com/docs/login/universal-login). Your users can log in to your application through a page hosted by Auth0, which provides them with a secure, standards-based login experience that you can customize with your own branding and various authentication methods, such as logging in with a username and password or with a social provider like Facebook or Google.
+
+Once you log in, visit the protected **"Profile"** page to see all the user profile information that Auth0 securely shares with your application using [ID tokens](https://auth0.com/docs/security/tokens/id-tokens).
+
+Click on the **"Log Out"** button and try to access the [Profile page](http://localhost:4040/profile).
+
+If everything is working as expected, React redirects you to log in with Auth0.
 
 ## Why Use Auth0?
 

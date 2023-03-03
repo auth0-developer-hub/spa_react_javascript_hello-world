@@ -7,14 +7,8 @@ export const ProtectedPage = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    let isMounted = true;
-
     const getMessage = async () => {
       const { data, error } = await getProtectedResource();
-
-      if (!isMounted) {
-        return;
-      }
 
       if (data) {
         setMessage(JSON.stringify(data, null, 2));
@@ -26,10 +20,6 @@ export const ProtectedPage = () => {
     };
 
     getMessage();
-
-    return () => {
-      isMounted = false;
-    };
   }, []);
 
   return (

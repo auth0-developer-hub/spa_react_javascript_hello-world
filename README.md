@@ -6,7 +6,7 @@ This template is based on a code sample is part of the ["Auth0 Developer Center"
 
 ## Quick Auth0 Set Up
 
-**First and foremost, if you haven't already, [sign up for an Auth0 account](https://auth0.com/signup?promo=sup&place=dev-hub-instruction&type=signup-cta&origin=developers-hub) to connect your application with the Auth0 Identity Platform.**
+**First and foremost, if you haven't already, [sign up for an Auth0 account](https://auth0.com/signup?utm_source=partner&utm_medium=vercel&utm_campaign=2023-03%7CINB-ORG%7CVercel-Auth0-SignupUserCreationForm-SU&ocid=7014z000000zJItAAM-aPA4z0000008OZeGAM&utm_id=aNK4z000000blT4GAI) to connect your application with the Auth0 Identity Platform.**
 
 Next, you'll connect your Single-Page Application (SPA) with Auth0. You'll need to create an application registration in the Auth0 Dashboard and get two configuration values: the **Auth0 Domain** and the **Auth0 Client ID**.
 

@@ -11,12 +11,12 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "cross-env PORT=4040 react-scripts start",
+    "dev": "netlify dev",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "api": "json-server --host 0.0.0.0 --port 6060 --watch json-server/db.json --routes json-server/routes.json"
+    "lint": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +44,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.1.0",
     "json-server": "^0.17.0",
+    "netlify-cli": "^15.1.1",
     "prettier": "^2.7.1"
   }
 }

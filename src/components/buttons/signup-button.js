@@ -7,17 +7,17 @@ export const SignupButton = () => {
   const handleSignup = async () => {
     await loginWithRedirect({
       appState: {
-        returnTo: '/profile'
+        returnTo: "/profile",
       },
       authorizationParams: {
-        screen_hint: 'signup'
-      }
-    })
-  }
+        screen_hint: "signup",
+      },
+    });
+  };
 
   return (
     <button className="button__sign" onClick={handleSignup}>
       Sign Up
     </button>
-  )
-}
+  );
+};
